@@ -1,0 +1,44 @@
+.chat-window {
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.4);
+
+  .header {
+    .btn-outline-dark {
+      border: none;
+
+      &:hover {
+        background-color: white;
+        color: initial;
+        border: none;
+      }
+    }
+  }
+
+  .separate {
+    border-top: 1px solid black;
+  }
+
+  .content {
+    height: calc(100% - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+
+    .message{
+        max-height: 100%;
+        overflow-y: auto;
+    }
+
+    .form {
+        padding: 2px 2px 2px 0;
+        border: 1px solid black;
+        border-radius: 2px;
+
+        .ant-form-item {
+            flex: 1;
+            margin-bottom: 0;
+        }
+    }
+  }
+}

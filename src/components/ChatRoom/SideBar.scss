@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: #3f0e40;
+  height: 100vh;
+
+  .sidebar-top {
+    .sidebar-top__text {
+      color: white !important;
+    }
+  }
+
+  .separate {
+    border-top: 1px solid white;
+  }
+
+  .sidebar-bot {
+    .ant-collapse-header {
+      color: white;
+    }
+
+    .ant-collapse-content-box {
+      padding: 0 40px;
+
+      .btn-outline-light {
+        padding: 0;
+        border: none;
+
+        &:hover {
+          background-color: initial;
+          color: white;
+        }
+
+        .button-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
